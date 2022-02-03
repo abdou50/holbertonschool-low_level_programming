@@ -1,21 +1,21 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-char charTYPE;
-int  intType;
-long int  longintType;
-long long int htType;
-float floatTYpe;
-printf("Size of a char: %zu byte(s)\n", sizeof(chatTYPE));
-printf("Size of an int: %zu byte(s)\n", sizeof(intType));
-printf("Size of a long int: %zu byte(s)\n", sizeof(longintType));
-printf("Size of a long long int: %zu byte(s)\n", sizeof(htType));
-printf("Size of a float: %zu byte(s)\n", sizeof(floatTYpe));
-return (0);
+	char c;
+	int  i;
+	long int  li;
+	long long int lli;
+	float f;
+
+	printf("Size of a char: %d byte(s)\n", sizeof(c));
+	printf("Size of an int: %d byte(s)\n", sizeof(i));
+	printf("Size of a long int: %d byte(s)\n", sizeof(li));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(lli));
+	printf("Size of a float: %d byte(s)\n", sizeof(f));
+	return (0);
 }
