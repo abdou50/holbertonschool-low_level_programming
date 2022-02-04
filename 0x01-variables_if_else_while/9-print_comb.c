@@ -6,7 +6,7 @@
  */
 int  main(void)
 {
-	char n = 'a';
+	int n ;
 
 	for (n = '0'; n <= '9'; n++)
 	{
