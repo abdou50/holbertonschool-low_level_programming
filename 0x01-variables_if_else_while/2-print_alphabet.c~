@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main (void)
+{
+	/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+	char n ;
+
+	for (int c = 97; c <= 122; ++c)
+        char (c);
+	putchar (c);
+	n= '\n';
+	putchar(n);
+	return 0 ;
+}
