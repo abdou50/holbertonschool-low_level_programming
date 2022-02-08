@@ -2,14 +2,10 @@
 #include "main.h"
 
 /**
- * print_alphabet- writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_alphabet - writes the character c to stdout
  */
 void print_alphabet(void)
-{	
+{
 	int a;
 
 	for (a = 'a'; a <= 'z'; a++)
