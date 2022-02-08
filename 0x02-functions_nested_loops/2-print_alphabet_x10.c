@@ -1,20 +1,19 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ *print_alphabet_x10 - writes the character c to stdout
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-    for (i = 1 ; i <= 10 ; i++)
-    {
-        for (char k = 'a';  k =< 'z' ; k++)
-        {
-            _putchar(a)
-            _putchar("\n")
-        }
-    }
-return (0);
+	int i;
+	char k;
+
+	for (i = 1 ; i <= 10 ; i++)
+	{
+	for (k = 'a'; k <= 'z' ; k++)
+	{
+	_putchar(k);
+	}
+	_putchar('\n');
+	}
 }
