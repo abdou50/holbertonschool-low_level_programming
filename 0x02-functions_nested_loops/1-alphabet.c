@@ -8,14 +8,13 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-void print_alphabet(void);
-{
-	char a;
+void print_alphabet(void)
+{	
+	int a;
 
-	for (a = 'a' ; a <= 'z' ; a++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		_putchar(a);
-		_putchar("/n");
+		_putchar (a);
 	}
-	return 0 ;
+	_putchar('\n');
 }
