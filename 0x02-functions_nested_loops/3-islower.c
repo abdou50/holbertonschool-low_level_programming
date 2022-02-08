@@ -1,15 +1,20 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - check the code.
+ * _islower - writes the character c to stdout
+ * @c: The character to print
  *
- * Return: Always 0.
+ * Return: On success 1
  */
-	int _islower(int c);
-	{
-	if c != ['a'..'z']
-		return 1;
-	else 
-		return 0;	
+	int _islower(int c)
 
+{
+	if (c <= 97 || c >= 122)
+	{
+		return (0);
+	}
+	else
+	{
+		return (1);
+	}
 	}
