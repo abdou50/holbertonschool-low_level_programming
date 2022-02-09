@@ -2,15 +2,17 @@
 #include <math.h>
 #include "main.h"
 /**
- * _islower - writes the character c to stdout
- * @c: The character to print
+ *  print_last_digit - writes the character c to stdout
+ * @n: The character to print
  *
  * Return: On success 1
  */
-        int print_last_digit(int n)
+	int print_last_digit(int n)
 {
 	int  l;
 
 	l = n % 10;
-	return(l);
+	if (l < 0)
+	l = abs(l);
+	return (l);
 }
