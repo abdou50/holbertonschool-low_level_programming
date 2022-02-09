@@ -14,5 +14,6 @@
 	l = n % 10;
 	if (l < 0)
 	l = abs(l);
+	_putchar('0' + l);
 	return (l);
 }
