@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_numbers - writes the character c to stdout
- * @c: The character to print
- *
+ * more_numbers - writes the character c to stdout
  * Return: On success 1
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
-int n;
+int n, i;
 
+for (i = 0; i <= 10; i++)
+{
 for (n = 0; n <= 14; n++)
 {
 	if (n > 9)
@@ -18,5 +18,6 @@ for (n = 0; n <= 14; n++)
 	}
 	_putchar ((n % 10) + '0');
 }
-_putchar('\n');
+	_putchar('\n');
+}
 }
