@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *print_numbers - writes the character c to stdout
+ *print_most_number- writes the character c to stdout
  * @c: The character to print
  *
- * Return: On success 1
+ * Return: On 
+ *
  */
-void print_numbers(void)
+void print_most_number(void)
 {
 int n;
 
