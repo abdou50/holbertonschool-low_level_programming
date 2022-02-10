@@ -1,13 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *print_most_number- writes the character c to stdout
- * @c: The character to print
- *
- * Return: On 
+ *print_most_numbers- writes the character c to stdout
  *
  */
-void print_most_number(void)
+void print_most_numbers(void)
 {
 int n;
 
