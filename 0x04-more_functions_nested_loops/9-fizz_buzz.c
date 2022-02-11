@@ -19,20 +19,17 @@ printf("Fizz ");
 }
 else if (i % 5 == 0)
 {
-if (i == 100)
-{
-printf("Buzz\n");
+printf("Buzz");
 }
 else
 {
-printf("Buzz ");
+	printf("%d", i);
 }
-}
-else
+if (i != 100)
 {
-printf("%d ", i);
+	printf(" ");
 }
 }
+printf("\n");
 return (0);
 }
-
