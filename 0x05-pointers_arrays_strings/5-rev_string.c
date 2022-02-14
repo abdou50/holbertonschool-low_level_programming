@@ -12,15 +12,19 @@ void rev_string(char *s)
 	int i;
 	int k;
 	int n = 0;
+	int j;
+	char array[1200];
 
 	for (k = 0; s[k] != '\0'; k++)
 	{
 		n++;
 	}
-
+	j = 0;
 	for (i = n - 1; i >= 0; i--)
 	{
-		_putchar (s[i]);
+	 array[j] = s[i];
+	 j++;
 	}
+	s = array;
 
 }
