@@ -7,7 +7,7 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-void rev_string(char *s)
+void rev_string (char *s)
 {
 	int i;
 	int k;
@@ -18,7 +18,7 @@ void rev_string(char *s)
 		n++;
 	}
 
-	for (i = n - 1; i >= 0; i--)
+	for (i = n; i >= 0; i--)
 	{
 		_putchar (s[i]);
 	}
