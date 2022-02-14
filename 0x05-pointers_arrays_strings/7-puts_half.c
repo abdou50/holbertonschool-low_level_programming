@@ -25,7 +25,7 @@ for (i = ((k - 1) / 2) ; i < k - 1 ; i++)
 }
 else
 {
-for (i = ((k) / 2) ; i <= k - 1 ; i++)
+for (i = ((k) / 2) ; i < k - 1 ; i++)
 {
 	_putchar(str[i]);
 }
