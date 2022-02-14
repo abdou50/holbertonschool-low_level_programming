@@ -20,10 +20,12 @@ void rev_string(char *s)
 		n++;
 	}
 	j = 0;
-	for (i = n - 1; i >= 0; i--)
+	i = n - 1;
+	while (i >= 0)
 	{
-	 array[j] = s[i];
-	 j++;
+		array[j] = s[i];
+			i--;
+			j++;
 	}
 	s = array;
 
