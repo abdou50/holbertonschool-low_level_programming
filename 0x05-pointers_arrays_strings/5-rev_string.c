@@ -27,6 +27,7 @@ void rev_string(char *s)
 			i--;
 			j++;
 	}
-	s = array;
+	for (k = 0; k < n ; k++)
+	s[k] = array[k];
 
 }
