@@ -16,10 +16,19 @@ for (i = 0 ; str[i] != '\0'; i++)
 {
 	k++;
 }
-for (i = ( (k) / 2) ; i <= k - 1 ; i++)
+if (k % 2 == 1)
+{
+for (i = ((k - 1) / 2) ; i <= k - 1 ; i++)
 {
 	_putchar(str[i]);
-
+}
+}
+else
+{
+for (i = ((k) / 2) ; i <= k - 1 ; i++)
+{
+	_putchar(str[i]);
+}
 }
 _putchar('\n');
 }
