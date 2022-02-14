@@ -17,7 +17,7 @@ for (i = 0 ; str[i] != '\0'; i++)
 {
 	k++;
 }
-for (j = 0 ; j <= k; j++)
+for (j = 0 ; j <= (k -1); j++)
 {
 	_putchar(str[j]);
 	j++;
