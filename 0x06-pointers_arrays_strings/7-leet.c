@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 int i, j, k, l;
-char ar[] = {'O', 'L', ' ', 'E', 'A', ' ', ' ', ' ', 'T'};
+char ar[] = {'O', 'L', ' ', 'E', 'A', ' ', ' ', 'T'};
 
 k = strlen(s);
 j = strlen(ar);
