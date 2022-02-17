@@ -17,7 +17,7 @@ for (i = 0; i < k; i++)
 {
 for (l = 0; l < j; l++)
 {
-if ((s[i] == ar[l] || s[i] - 32 == ar[l] || s[i] == ar[l] - 32) && ar[l] != ' '))
+if ((s[i] == ar[l] || s[i] - 32 == ar[l] || s[i] == ar[l] - 32) && (ar[l] != ' '))
 {
 	s[i] = l;
 }
