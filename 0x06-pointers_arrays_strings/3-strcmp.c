@@ -31,5 +31,5 @@ else
 k = s1[i] - s2[i];
 }
 }
-return k;
+return (k);
 }
