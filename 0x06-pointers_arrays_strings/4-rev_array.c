@@ -27,7 +27,7 @@ void reverse_array(int *a, int n)
 	else
 	{
 		k = n / 2;
-		while (k != i && k != n)
+		while (k > i && k < n)
 		{
 			tmp = a[i];
 			a[i] = a[n - 1];
