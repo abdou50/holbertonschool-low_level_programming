@@ -14,7 +14,7 @@ int k, i, ls1, ls2;
 
 ls1 = strlen(s1);
 ls2 = strlen(s2);
-for (i = 0; i < ls1 && i < ls2; i++)
+for (i = 0; i < ls1 && i < ls2 && s1[i] != '\0' && s2[i] != '\0'; i++)
 {
 if (s1[i] > s2[i])
 }
