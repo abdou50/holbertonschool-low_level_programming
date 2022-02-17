@@ -35,6 +35,6 @@ else if (s[i] == 'T' || s[i] == 't')
 s[i] = '1';
 }
 }
-_putchar('\n');
+putchar('\n');
 return (s);
 }
