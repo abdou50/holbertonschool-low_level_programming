@@ -1,7 +1,6 @@
 #include "main.h"
-#include <string.h>
 /**
- *leet - writes the character c to stdout
+ * leet - writes the character c to stdout
  * @s: The character to print
  *
  * Return: On success 1.
@@ -35,6 +34,6 @@ else if (s[i] == 'T' || s[i] == 't')
 s[i] = '1';
 }
 }
-putchar('\n');
 return (s);
 }
+
