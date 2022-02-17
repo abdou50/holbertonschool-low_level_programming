@@ -16,7 +16,7 @@ j = strlen(ar);
 for (i = 0; i < k - 1; i++)
 {
 for (l = 0; l < j - 1; l++)
-if (s[i] == ar[l] || s[i] - 32 || ar[l] || s[i] || ar[l] - 32)
+if (s[i] == ar[l] || s[i] - 32 == ar[l] || s[i] == ar[l] - 32)
 {
 	s[i] = l;
 }
