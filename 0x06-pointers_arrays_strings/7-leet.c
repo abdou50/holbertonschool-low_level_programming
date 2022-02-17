@@ -9,40 +9,31 @@
  */
 char *leet(char *s)
 {
-int i, k, c;
-char ar[100];
+int i, k;
 
 k = strlen(s);
 for (i = 0; i < k; i++)
 {
-if (s[i] == 'a' || s[i] == 'A')
+if (s[i] == 'A' || s[i] == 'a')
 {
-ar[i] = '4';
+s[i] = '4';
 }
-else if (s[i] == 'e' || s[i] == 'E')
+else if (s[i] == 'E' || s[i] == 'e')
 {
-ar[i] = '3';
+s[i] = '3';
 }
-else if (s[i] == 'o' || s[i] == 'O')
+else if (s[i] == 'O' || s[i] == 'o')
 {
-ar[i] = '0';
+s[i] = '0';
 }
-else if (s[i] == 't' || s[i] == 'T')
+else if (s[i] == 'T' || s[i] == 't')
 {
-ar[i] = '7';
+s[i] = '7';
 }
-else if (s[i] == 'l' || s[i] == 'L')
+else if (s[i] == 'T' || s[i] == 't')
 {
-ar[i] = '4';
+s[i] = '1';
 }
-else
-{
-ar[i] = s[i];
-}
-}
-for (c = 0; c < k; c++)
-{
-s[c] = ar[c];
 }
 _putchar('\n');
 return (s);
