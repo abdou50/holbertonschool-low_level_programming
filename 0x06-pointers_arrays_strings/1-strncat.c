@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * __strncat - writes the character c to stdout
+ * _strncat - writes the character c to stdout
  * @dest: The character to print
  * @src: the string
  * @n : size of int
