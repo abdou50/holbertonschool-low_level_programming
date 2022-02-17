@@ -4,7 +4,7 @@
  * _strncpy - writes the character c to stdout
  * @dest: The character to print
  * @src: the string
- * @n : size of
+ * @n : size of int
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
