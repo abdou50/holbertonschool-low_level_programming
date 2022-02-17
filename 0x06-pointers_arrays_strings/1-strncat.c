@@ -22,6 +22,6 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i + k] = src[i];
 		}
 	}
-	dest[i++] = '\0';
+	dest[i + k] = '\0';
 	return (dest);
 }
