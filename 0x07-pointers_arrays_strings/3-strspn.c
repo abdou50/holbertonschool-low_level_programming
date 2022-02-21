@@ -9,20 +9,26 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, k, l, m;
+	int i, j;
+	int k = strlen(s);
+	int sum = 0;
 
-	k = 0;
-sh: 1: q: not found
-	m = strlen(accept);
-	for (i = 0; i < l; i++)
+	for (i = 0; i < k; i++)
 	{
-		for (j = 0; j < m; j++)
+		j = 0;
+		while (s[i] != accept[j] && accept[j] != '\0')
 		{
+			j++;
+		}
 		if (s[i] == accept[j])
 		{
-			k++;
+			sum += 1;
 		}
+		else 
+		{
+			i = k;
+			j = strlen(accept);
 		}
 	}
-	return (k);
+	return (sum);
 }
