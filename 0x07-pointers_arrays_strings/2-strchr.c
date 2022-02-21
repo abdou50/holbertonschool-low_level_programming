@@ -1,24 +1,29 @@
 #include "main.h"
+/**
+ * _strchr - writes the character c to stdout
+ * @c: The character to print
+ * @s: string
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 char *_strchr(char *s, char c)
 {
-	int i , k, m;
-	char  *l[100];
+	int i, k;
 
-	k = strlen(s); 
-	for(i = 0; i < k; i++)
+	k = strlen(s);
+	i = 0;
+	while (*s != c && i < k)
 	{
-		if (s[i] == c)
-		{ 
-			for (m = i ; m < k; m++)
-			{
-				*l[i] = s[i];
-			}
-			break; 
-		}
+		s++;
 	}
-	if  (i = k)
+	if (*s == c)
 	{
-		*l = 0;
+		return (s);
 	}
-return (*l);
+	else
+	{
+		return (0);
+	}
+
 }
