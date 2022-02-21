@@ -9,9 +9,6 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i, k;
-
-	k = strlen(s);
 	while (*s != c && *s != '\0')
 	{
 		s++;
