@@ -24,7 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			sum += 1;
 		}
-		else 
+		else
 		{
 			i = k;
 			j = strlen(accept);
