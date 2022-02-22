@@ -16,14 +16,14 @@ char *_strpbrk(char *s, char *accept)
 	for (i = 0; i < k ; i++)
 	{
 		j = 0;
-		while (s[i] != accept[j] && j < l)
+		while (s[i] != accept[j] && j <= l)
 		{
 			j++;
 		}
 	}
 	if (j < l)
 	{
-		for (n = 0; n < l - j + 1 ;n++)
+		for (n = 0; n < l - j + 1; n++)
 		{
 			s++;
 		}
