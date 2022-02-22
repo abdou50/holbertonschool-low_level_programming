@@ -26,8 +26,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		else
 		{
-			i = k;
-			j = strlen(accept);
+			break;
 		}
 	}
 	return (sum);
