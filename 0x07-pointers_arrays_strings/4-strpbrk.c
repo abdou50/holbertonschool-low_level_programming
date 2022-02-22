@@ -9,11 +9,11 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, n, l, k;
+	int i, k, j, n, l;
 
-	k = strlen(s);
 	l = strlen(accept);
-	for (i = 0; i < k ; i++)
+	k = strlen(s);
+	for (i = 0; i < k; i++)
 	{
 		j = 0;
 		while (s[i] != accept[j] && j <= l)
@@ -23,9 +23,11 @@ char *_strpbrk(char *s, char *accept)
 	}
 	if (j < l)
 	{
-		for (n = 0; n < j - 2; n++)
+		n = 0;
+		while (n < j - 2)
 		{
 			s++;
+			n++;
 		}
 		return (s);
 		j = l;
