@@ -23,7 +23,7 @@ char *_strpbrk(char *s, char *accept)
 	}
 	if (j < l)
 	{
-		for (n = 0; n < j - 2; n++)
+		for (n = 0; n < l - j + 1 ;n++)
 		{
 			s++;
 		}
