@@ -6,7 +6,7 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int prime(int  n,int i)
+int prime(int  n, int i)
 {
 	if (n <= 2)
 		return (0);
