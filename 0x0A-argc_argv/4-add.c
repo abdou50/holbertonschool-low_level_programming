@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	if (argc < 2)
+	if (argc <= 2)
 	{
 		printf("0\n");
 	}
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 			if (!isdigit(*argv[i]))
 			{
 				printf("Error\n");
-				return (0);
+				return (1);
 			}
 			else
 			{
