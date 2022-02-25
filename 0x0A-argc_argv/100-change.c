@@ -37,5 +37,5 @@ printf("%d\n", j);
 i = 5;
 }
 }
-return (2);
+return (0);
 }
