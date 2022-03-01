@@ -19,8 +19,8 @@ if (k == NULL)
 	return (NULL);
 }
 for (i = 0; s[i] ; l++)
-{
-	k[i] = str[i];
+{	
+k[i] = str[i];
 }
 k[l] = '\0';
 return (k);
