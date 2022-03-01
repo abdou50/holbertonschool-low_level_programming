@@ -12,7 +12,7 @@ int i, l;
 i = strlen(str);
 if (str == NULL)
 return (NULL);
-k = malloc(sizeof(char) * (i - 1));
+k = malloc(sizeof(char) * (i) + 1);
 if (k == NULL)
 return (NULL);
 for (l = 0; l < i ; l++)
