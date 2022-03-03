@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _string_nconcat - writes the character c to stdout
+ * string_nconcat - writes the character c to stdout
  * @s1: The character to print
  * @s2: string
  * @n: isize
