@@ -22,11 +22,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 	k = strlen(name);
 	(*file).name = malloc(sizeof(char) * (k + 1));
 	if ((*file).name == NULL)
+	{
+		free(file);
 		return (NULL);
+	}
 	l = strlen(owner);
 	(*file).owner = malloc(sizeof(char) * (l + 1));
 	if ((*file).owner == NULL)
+	{
+		free((*file).name);
+		free(file);
 		return (NULL);
+	}
 	(*file).name = strcpy((*file).name, name);
 	(*file).age = age;
 	(*file).owner = strcpy((*file).owner, owner);
