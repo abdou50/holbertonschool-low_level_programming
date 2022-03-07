@@ -1,5 +1,14 @@
 #ifndef DOG_H
 #define DOG_H
+/**
+ *struct dog- writes the character c to stdout
+ * @name: The character to print
+ * @age: age
+ * @owner: owner
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 struct dog
 {
 	char *name;
