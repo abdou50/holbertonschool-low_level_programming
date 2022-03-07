@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * free_dog - writes the character c to stdout
@@ -12,5 +13,5 @@ void free_dog(dog_t *d)
 		return;
 	free((*d).owner);
 	free((*d).name);
-	free((*d).age);
+	free(d);
 }
