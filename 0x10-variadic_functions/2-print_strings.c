@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdlib.h>
 /**
  * print_strings - writes the character c to stdout
  * @separator: The character to print
