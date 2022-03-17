@@ -1,27 +1,22 @@
+
+#include <stdio.h>
 #include "lists.h"
 /**
- * print_list - print the element in a specific list
- * @h: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+ * print_list - print Linkedlist.
+ * @h: Pointer to next node.
+ * Return: nodes number.
+**/
 size_t print_list(const list_t *h)
 {
-size_t n = 0;
-
-while (h)
-{
-	if (h->str == NULL)
+size_t i = 0;
+	while (h != NULL)
 	{
-		printf("[0] (nil)\n");
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
+		i++;
 	}
-	else
-	{
-		printf("[%d] %s\n", h->len, h->str);
-	}
-	n++;
-	h = h->next;
-}
-return (n);
+return (i);
 }
