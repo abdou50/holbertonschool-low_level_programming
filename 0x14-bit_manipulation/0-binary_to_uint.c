@@ -18,7 +18,9 @@ length = strlen(b);
 for (count = length - 1; count >= 0; count--)
 {
 if (b[count] != '0' && b[count] != '1')
+{
 	return (0);
+}
 	if (b[count] == '1')
 	{
 	result += k;
