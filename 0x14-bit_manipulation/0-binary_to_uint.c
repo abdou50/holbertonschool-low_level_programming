@@ -15,7 +15,7 @@ int count;
 unsigned int length;
 
 length = strlen(b);
-if (b == NULL)
+if (*b == '\0')
 	return (0);
 for (count = length - 1; count >= 0; count--)
 {
