@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int length;
 
 	length = strlen(b) - 1;
-	if (*b == '\0' && b == NULL)
+	if (b == NULL)
 		return (0);
 	for (count = length; count >= 0; count--)
 	{
