@@ -13,10 +13,12 @@ unsigned int binary_to_uint(const char *b)
 	int count;
 	unsigned int length;
 
-	length = strlen(b) - 1;
+	length = strlen(b);
 	if (b == NULL)
+	{
 		return (0);
-	for (count = length; count >= 0; count--)
+	}
+	for (count = length - 1; count >= 0; count--)
 	{
 	if (b[count] != '0' && b[count] != '1')
 	{
@@ -24,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	if (b[count] == '1')
 	{
-	result += k;
+	result += (b[count] - '0')* k;
 	}
 	k *= 2;
 	}
