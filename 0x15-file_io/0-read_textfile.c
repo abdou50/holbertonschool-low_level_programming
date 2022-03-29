@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * read_text- is to read and print the text in a specific file
+ * read_textfile- is to read and print the text in a specific file
  *
  * @filename:  the name of the file
  * @letters: size of letters
